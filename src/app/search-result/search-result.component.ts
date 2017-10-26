@@ -14,10 +14,14 @@ export class SearchResultComponent implements OnInit {
     config.readonly = true;
   }
 
-  exp;
+  exp1;
+  exp2;
 
-  onExpand(){
-    this.exp=!this.exp;
+  onExpand1(){
+    this.exp1=!this.exp1;
+  }
+  onExpand2(){
+    this.exp2=!this.exp2;
   }
 
 
