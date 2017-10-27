@@ -24,7 +24,14 @@ export class SearchResultComponent implements OnInit {
     this.exp2=!this.exp2;
   }
 
-
+  range: any = 50;
+  
+      coverage() {
+          if(typeof this.range === "string" && this.range.length !== 0) {
+              return this.range;
+          }
+      }
+    
 
 
   ngOnInit() {

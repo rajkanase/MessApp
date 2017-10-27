@@ -14,6 +14,16 @@ import { HttpModule } from "@angular/http";
 import { HomeComponent } from './home/home.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MatSliderModule} from '@angular/material';
+import {MatCheckboxModule} from '@angular/material';
+import {MatExpansionModule} from '@angular/material';
+import { AddMessComponent } from './add-mess/add-mess.component';
+import { FancyImageUploaderModule } from 'ng2-fancy-image-uploader';
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +33,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     SignupComponent,
     ForgetComponent,
     HomeComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    AddMessComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +42,11 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NgbModule.forRoot(),
     MyRoutingModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MatSliderModule,
+    MatCheckboxModule,
+    MatExpansionModule,
+    FancyImageUploaderModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [SignupService],
