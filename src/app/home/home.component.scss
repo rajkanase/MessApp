@@ -5,8 +5,9 @@
 }
 
 .jumbotron{
-    background-color: rgba(249, 235, 235, 0.31);
-    // padding: 3rem;
+    // background-color: rgba(249, 235, 235, 0.31);
+    padding: 1rem;
+    opacity: 0.8;
 }
 // .container .jumbotron, .container-fluid .jumbotron {
 //     padding-left: 240px;
@@ -15,7 +16,7 @@
 // }
 
 .md-form label {
-    color: rgb(245, 238, 239);
+    color:black;
     font-size: initial;
 }
 .fa {

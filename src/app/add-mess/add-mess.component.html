@@ -1,2 +1,149 @@
 <br><br><br><br><br>
+<!-- <div class="row">
 <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader>
+<div class="col-md-3">
+Mess Name:
+<div class="col-md-9">
+<input type="text" placeholder="add mess name here">
+</div>
+</div>
+</div> -->
+
+<div class="container card">
+<div class="row">
+    <div class="col-md-2" style="padding-top:1%">
+        <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader>
+    </div>
+    <div class="col-md-2" style="padding-top:6%">
+        Mess Name:
+    </div>
+    <div class="col-md-4" style="padding-top:6%">
+        <input type="text" placeholder="add mess name here">
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-md-2">
+        <!-- <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader> -->
+    </div>
+    <div class="col-md-2">
+        Address:
+    </div>
+    <div class="col-md-4">
+        <textarea matInput placeholder="Textarea"></textarea>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-md-2">
+        <!-- <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader> -->
+    </div>
+    <div class="col-md-2">
+       Contact Number:
+    </div>
+    <div class="col-md-4">
+        <input type="text" placeholder="add mess name here">
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-md-2">
+        <!-- <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader> -->
+    </div>
+    <div class="col-md-2">
+        Select Opening Days:
+    </div>
+    <div class="col-md-4">
+        <mat-checkbox>Sunday</mat-checkbox><br>
+        <mat-checkbox>Monday</mat-checkbox><br>
+        <mat-checkbox>Tuesday</mat-checkbox><br>
+        <mat-checkbox>Wednesday</mat-checkbox><br>
+        <mat-checkbox>Thursday</mat-checkbox><br>
+        <mat-checkbox>Friday</mat-checkbox><br>
+        <mat-checkbox>Saturday</mat-checkbox><br>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-md-2">
+        <!-- <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader> -->
+    </div>
+    <div class="col-md-2">
+        Timing:
+    </div>
+    <div class="col-md-2">
+        Open:
+    </div>
+    <div class="col-md-2">
+        <ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+    </div>
+    <div class="col-md-2">
+        Close:
+    </div>
+    <div class="col-md-2">
+        <ngb-timepicker [(ngModel)]="time1"></ngb-timepicker>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-md-2">
+        <!-- <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader> -->
+    </div>
+    <div class="col-md-2">
+        Add Location:
+    </div>
+    <div class="col-md-2">
+        Lattitude:
+    </div>
+    <div class="col-md-2">
+        <input type="text" placeholder="lattitute">
+    </div>
+    <div class="col-md-2">
+        Longitute:
+    </div>
+    <div class="col-md-2">
+        <input type="text" placeholder="longitute">
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-md-2">
+        <!-- <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader> -->
+    </div>
+    <div class="col-md-9 card">
+        <ngb-tabset [justify]="currentJustify">
+            <ngb-tab title="Menu Card">
+              <ng-template ngbTabContent>
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
+                dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+                iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+              </ng-template>
+            </ngb-tab>
+            <ngb-tab title="Mess Charge">
+              <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
+                cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
+                yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+                shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
+                sint qui sapiente accusamus tattooed echo park.</p>
+              </ng-template>
+            </ngb-tab>
+            <ngb-tab title="Photos">
+              <ng-template ngbTabContent>
+                  <div class="row">
+                <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader>
+                <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader>
+                <fancy-image-uploader [options]="options" (onUpload)="onUpload($event)"></fancy-image-uploader>
+            </div>
+            </ng-template>
+            </ngb-tab>
+          </ngb-tabset>
+          <br><br><br><br><br>
+    </div>
+</div><br>
+<div class="row">
+        <div class="col-md-5">
+    </div>
+    <div class="col-md-4">
+            <button type="button" class="btn btn-pink">Save Data</button>
+</div>
+<div class="col-md-3">
+</div>
+</div>
+</div>

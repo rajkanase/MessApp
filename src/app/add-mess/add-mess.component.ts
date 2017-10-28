@@ -16,7 +16,8 @@ export class AddMessComponent implements OnInit {
   options: FancyImageUploaderOptions = {
     thumbnailHeight: 150,
     thumbnailWidth: 150,
-    uploadUrl: 'http://some-server.com/upload',
+    // uploadUrl: 'http://some-server.com/upload',
+    uploadUrl: 'https://jsonplaceholder.typicode.com',
     allowedImageTypes: ['image/png', 'image/jpeg'],
     maxImageSize: 3
 };

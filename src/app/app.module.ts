@@ -19,6 +19,8 @@ import {MatCheckboxModule} from '@angular/material';
 import {MatExpansionModule} from '@angular/material';
 import { AddMessComponent } from './add-mess/add-mess.component';
 import { FancyImageUploaderModule } from 'ng2-fancy-image-uploader';
+import {MatFormFieldModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material';
 
 
 
@@ -46,7 +48,9 @@ import { FancyImageUploaderModule } from 'ng2-fancy-image-uploader';
     MatSliderModule,
     MatCheckboxModule,
     MatExpansionModule,
-    FancyImageUploaderModule
+    FancyImageUploaderModule,
+    MatFormFieldModule,
+    MatButtonModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [SignupService],
